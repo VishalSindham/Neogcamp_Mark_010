@@ -15,13 +15,13 @@
             <h2 class="header">Cash Counter</h2>
             <div class="alert alert-danger hidden"></div>
             <label for="bill">Bill Amount</label>
-            <input type="number" name="bill " class="bill form-control" id="bill" placeholder="Enter Bill"><br>
+            <input type="number" min="0" oninput="validity.valid||(value='');" name="bill " class="bill form-control" id="bill" placeholder="Enter Bill" required /><br>
             
            <center><input type="submit" value="Next" readonly name="check "id="submit1" class="btn btn-primary"></center>
 
             <div class=""  id="hidden1">
          <label for="total">Cash Given</label>
-            <input type="number" name="total" class="total form-control" id="total" placeholder="Enter Cash Given"  required><br>
+            <input type="number" min="0" oninput="validity.valid||(value='');" name="total" class="total form-control" id="total" placeholder="Enter Cash Given"  required/><br>
            <center><input type="submit" value="Check" name="check " id="submit" class="btn btn-primary"></center>
             </div>
             <div id="hidden2">
